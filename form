@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset = 'utf-8'/>
+      <title>Form</title>
+      <style media="screen">
+      legend {
+        font-size: 24px;
+      }
+      </style>
+    </head>
+    <body>
+      <form>
+        <fieldset>
+          <legend>Account info</legend>
+          <label for="email">Enter your e-mail</label>
+          <input type="email" name="email" placeholder="e.g. asdf@asdf.com">
+          <label for "password">Choose a password<label>
+          <input type="password" name="password" placeholder="choose a password">
+        </fieldset>
+
+        <fieldset>
+          <legend>Personal info</legend>
+          <label for ="tel">Enter your phone number</label>
+          <input type="tel" name"tel" placeholder ="222-222-2222">
+          <label for ="name">What is your name?</label>
+          <input type="name" name"name" placeholder="first, last">
+        </fieldset>
+
+
+          <button type="reset" name="reset">Reset the form</button>
+          <button type="submit" name="Submit">Submit</button>
+          <button type="button" data-attr-test="test-id" name="does things">do other things</button>
+      </form>
+    </body>
+  </html>
