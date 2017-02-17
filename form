@@ -13,7 +13,7 @@
       <form>
         <fieldset>
           <legend>Account info</legend>
-          <label for="email">Enter your e-mail</label>
+          <label for="email" aria-required="true" >Enter your e-mail</label>
           <input type="email" name="email" placeholder="e.g. asdf@asdf.com">
           <label for "password">Choose a password<label>
           <input type="password" name="password" placeholder="choose a password">
@@ -44,21 +44,21 @@
           <input type="text" name="zip-code" />
           <label for="country">Country</label>
           <select name="country">
-            <optgroup label='Europe'>
-              <option value='UK'>UK</option>
-              <option value='Germany'>Germany</option>
-              <option value='France'>France</option>
+            <optgroup label="Europe">
+              <option value="UK">UK</option>
+              <option value="Germany">Germany</option>
+              <option value="France">France</option>
             </optgroup>
-            <optgroup label='North America'>
-              <option value='USA'>USA</option>
-              <option value='Canada'>Canada</option>
+            <optgroup label="North America">
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
             </optgroup>
           </select>
         </fieldset>
 
-
+          checkbox 
           <button type="reset" name="reset">Reset the form</button>
-          <button type="submit" name="Submit">Submit</button>
+          <button type="submit" name="Submit" disabled="true">Submit</button>
       </form>
     </body>
   </html>
