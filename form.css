@@ -1,0 +1,76 @@
+*::before, *::after, * {
+  box-sizing: border-box;
+}
+
+html, body{
+  margin:0;
+}
+
+html{
+  text-align: center; /*this  centers the text*/
+  height: 100vh;
+  font-size: 20px;
+}
+
+body{
+  background: #fff;
+  width: 80vw;
+  margin: 0 auto;
+  height: 100vh;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+[role="banner"] ::before{
+    content: "";
+    height: 15vh;
+    background: #5bc0de;
+    position: absolute;
+    width: 100vw;
+    display: block;
+    z-index: -1;
+    left: 0;
+}
+
+
+[role="banner"] h1{
+  font-size: 7vh;
+}
+
+[role="banner"] h2{
+  font-size: 5vh;
+}
+
+[role="banner"] h1,
+[role="banner"] h2 {
+  margin: 0; /*by specifying this h1 using its attribute of banner, you don't apply this to all h1s. And you don't have to give the header a class such as class=header top.*/
+  line-height: 1.2;
+}
+
+fieldset{
+  border:0;
+  margin-bottom:3rem;
+}
+
+fieldset:last-of-type{ /*Use last-of-type to specify only the last of a certain element, so you don't have to add a class*/
+  margin-bottom: 1rem;
+}
+
+button{
+  background: #ccd;
+  border-radius: 8px;/*this gives the buttons a round edge*/
+  border-style: solid;
+  border-color: #99a;
+  border-width: 1px;
+  font-size: 1rem;
+  padding: .25rem .5rem; /*.25 refers to top right, then moves clockwise from there*/
+}
+
+legend{
+  font-weight: bold;
+}
+
+[type="submit"]{
+  background: #cdd;
+  border-color: black;
+}
