@@ -3,13 +3,20 @@
     <head>
       <meta charset = 'utf-8'/>
       <title>Form</title>
-      <style media="screen">
-      legend {
-        font-size: 24px;
-      }
-      </style>
+    <link rel="StyleSheet" type="text/css" href="form.css">
     </head>
     <body>
+      <header role="banner">
+        <h1>My Website</h1>
+        <h2>by Lily Gil</h2>
+      </header>
+
+      <section>
+        <header>
+          <h1>Please fill out the following:</h1>
+        </header>
+      </section>
+
       <form>
         <fieldset>
           <legend>Account info</legend>
@@ -28,16 +35,16 @@
           <label for="tel">Enter your phone number</label>
           <input type="tel" name="tel" placeholder ="222-222-2222">
           <label>
-            <input type="radio" name="genger" value="prefer not to say" checked />prefer not to say
+            <input type="radio" name="gender" value="prefer not to say" checked />prefer not to say
           </label>
           <label>
-            <input type="radio" name="genger" value="male"/>male
+            <input type="radio" name="gender" value="male"/>male
           </label>
           <label>
-            <input type="radio" name="genger" value="female"/>female
+            <input type="radio" name="gender" value="female"/>female
           </label>
           <label>
-            <input type="radio" name="genger" value="other"/>other
+            <input type="radio" name="gender" value="other"/>other
           </label>
         </fieldset>
 
